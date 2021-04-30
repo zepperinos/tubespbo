@@ -168,8 +168,9 @@ public class currencyConverter extends javax.swing.JFrame {
         });
 
         from_box1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        from_box1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "USD", "CAD", "EUR", "CNY", "JPY", "GBP" }));
+        from_box1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "US$ USD", "C$ CAD", "€ EUR", "¥ CNY", "¥ JPY", "£ GBP" }));
         from_box1.setBorder(null);
+        from_box1.setBackground(new java.awt.Color(255, 255, 255));
         from_box1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 from_box1ActionPerformed(evt);
@@ -177,7 +178,8 @@ public class currencyConverter extends javax.swing.JFrame {
         });
 
         from_box2.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        from_box2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "USD", "CAD", "EUR", "CNY", "JPY", "GBP" }));
+        from_box2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "US$ USD", "C$ CAD", "€ EUR", "¥ CNY", "¥ JPY", "£ GBP" }));
+        from_box2.setBackground(new java.awt.Color(255, 255, 255));
         from_box2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 from_box2ActionPerformed(evt);
