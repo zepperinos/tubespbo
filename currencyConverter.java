@@ -39,7 +39,7 @@ public class currencyConverter extends javax.swing.JFrame {
         amount = new javax.swing.JLabel();
         amount_box = new javax.swing.JTextField();
         convert_button = new javax.swing.JButton();
-        convert_button1 = new javax.swing.JButton();
+        reset_button = new javax.swing.JButton();
         from_box1 = new javax.swing.JComboBox<>();
         from_box2 = new javax.swing.JComboBox<>();
 
@@ -147,23 +147,25 @@ public class currencyConverter extends javax.swing.JFrame {
         convert_button.setBorderPainted(false);
         convert_button.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         convert_button.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        convert_button.setVerticalTextPosition(javax.swing.SwingConstants.CENTER);
         convert_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 convert_buttonActionPerformed(evt);
             }
         });
 
-        convert_button1.setBackground(new java.awt.Color(102, 204, 255));
-        convert_button1.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        convert_button1.setForeground(new java.awt.Color(255, 255, 255));
-        convert_button1.setText("Reset");
-        convert_button1.setBorder(null);
-        convert_button1.setBorderPainted(false);
-        convert_button1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        convert_button1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        convert_button1.addActionListener(new java.awt.event.ActionListener() {
+        reset_button.setBackground(new java.awt.Color(102, 204, 255));
+        reset_button.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        reset_button.setForeground(new java.awt.Color(255, 255, 255));
+        reset_button.setText("Reset");
+        reset_button.setBorder(null);
+        reset_button.setBorderPainted(false);
+        reset_button.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        reset_button.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        reset_button.setVerticalTextPosition(javax.swing.SwingConstants.CENTER);
+        reset_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                convert_button1ActionPerformed(evt);
+                reset_buttonActionPerformed(evt);
             }
         });
 
@@ -206,7 +208,7 @@ public class currencyConverter extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, right_panelLayout.createSequentialGroup()
                                 .addComponent(convert_button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(convert_button1, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(reset_button, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(right_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(from_box1, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(amount_box, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -231,7 +233,7 @@ public class currencyConverter extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
                 .addGroup(right_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(convert_button, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(convert_button1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(reset_button, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44))
         );
 
@@ -279,9 +281,9 @@ public class currencyConverter extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_from_box1ActionPerformed
 
-    private void convert_button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_convert_button1ActionPerformed
+    private void reset_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reset_buttonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_convert_button1ActionPerformed
+    }//GEN-LAST:event_reset_buttonActionPerformed
 
     private void convert_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_convert_buttonActionPerformed
         // TODO add your handling code here:
@@ -331,7 +333,7 @@ public class currencyConverter extends javax.swing.JFrame {
     private javax.swing.JTextField amount_box;
     private javax.swing.JPanel background;
     private javax.swing.JButton convert_button;
-    private javax.swing.JButton convert_button1;
+    private javax.swing.JButton reset_button;
     private javax.swing.JLabel converter_title;
     private javax.swing.JLabel copyright;
     private javax.swing.JLabel currency_title;
